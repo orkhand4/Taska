@@ -22,3 +22,8 @@ inptAmount.addEventListener('input', () => {
   let amount = +inptAmount.value;
   inptLiter.value = amount / petrolPrice;
 });
+
+inptLiter.addEventListener('input', () => {
+  let Liter = +inptLiter.value;
+  inptAmount.value = Liter * petrolPrice;
+});
