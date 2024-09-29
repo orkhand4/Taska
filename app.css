@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #000;
+}
+
+button {
+  cursor: pointer;
+}
+
+header > h1 {
+  padding: 40px 0;
+  color: hotpink;
+  text-align: center;
+  font-size: 40px;
+}
+
+.petrol-category-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 4em 0;
+}
+
+.petrol-cat-btn {
+  background: transparent;
+  border: 2px solid #fff;
+  padding: 0.5em 2em;
+  color: #fff;
+  font-size: 2.5em;
+  transition: 0.3s;
+}
+
+.active {
+  background: hotpink;
+  color: #000;
+  border-radius: 75em;
+}
+
+.liter-amount-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 4em 0;
+}
+
+.liter-amount-wrapper > input {
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: .5em 1em;
+  font-size: 2.5em;
+  color: #fff;
+  transition: .3s;
+}
+
+.liter-amount-wrapper> input:focus{
+  border-radius: .7em;
+  border-color: hotpink;
+}
