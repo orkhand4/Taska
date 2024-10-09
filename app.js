@@ -41,12 +41,12 @@ btns.forEach((btn) => {
 
 inptAmount.addEventListener('input', () => {
   let amount = +inptAmount.value;
-  inptLiter.value = amount / petrolPrice;
+  inptLiter.value = (amount / petrolPrice).toFixed(2);
 });
 
 inptLiter.addEventListener('input', () => {
   let liter = +inptLiter.value;
-  inptAmount.value = liter * petrolPrice;
+  inptAmount.value = (liter * petrolPrice).toFixed(2);
 });
 
 paymentTypeBtns.forEach((btn) => {
@@ -60,8 +60,6 @@ paymentTypeBtns.forEach((btn) => {
   })
 })
 
-
-
 reportBtn.addEventListener("click", () => {
   const liter = +inptLiter.value;
   const priceString = `${petrolPrice.toFixed(2)} AZN`
@@ -70,7 +68,6 @@ reportBtn.addEventListener("click", () => {
   const paymentTypeString = `${capitalize(paymentType)}`
   const currentDate = new Date();
   const dateString = `${currentDate.getDate()}.${currentDate.getMonth()+1}.${currentDate.getFullYear()}`;
-
 
   checkWrapper.innerHTML = `
     <ul>
